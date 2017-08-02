@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Title of the document</title>
+<script type="text/javascript" src="instafeed.min.js"></script>
+<script type="text/javascript">
+  var feed = new Instafeed({
+      get: 'user',
+      tagName: 'kohphangan',
+      userId: '2233863906',
+      clientId: '39159bcdbda74377a52599de365340d1',
+      accessToken: '2233863906.1677ed0.cec4cae221c946d9a1e2d359aa7a33ae',
+      filter: function(image) {
+            return image.tags.indexOf('kohphangan') >= 0;
+        }
+  });
+  feed.run();
+</script>
+</head>
+
+<body>
+Content of the document......
+<div id="wrapper">
+  <div id="insta-wrap">
+
+    <h1>Feed</h1>
+
+    <div id="instafeed">
+
+      
+
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
